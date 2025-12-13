@@ -9,8 +9,10 @@ import type { Feature } from '../types/features';
 
 import phoneDocumentScanner from '../assets/images/PhoneDocumentScanner.png';
 import phoneSignAndStamp from '../assets/images/PhoneSignAndStamp.png';
+import phoneBatchScanning from '../assets/images/PhoneBatchScanning.png';
 import signatureOverlay from '../assets/images/Signature.png';
 import completedStamp from '../assets/images/Completed.png';
+import paper from '../assets/images/Paper.png';
 
 export const FEATURES: Feature[] = [
   {
@@ -49,11 +51,28 @@ export const FEATURES: Feature[] = [
     id: 'batch-scanning',
     label: 'Batch Scanning',
     icon: BatchScanningIcon,
-    title: 'Batch Scanning',
+    title: 'Multiple Page Scan',
     subtitle: 'BATCH SCANNING',
     description:
-      'Scan multiple pages at once and combine them into a single document. Save time with our efficient batch processing.',
-    phoneImage: phoneDocumentScanner,
+      'Scan multiple pages or documents in multiple-scanning mode. Batch all scans as a single document.',
+    phoneImage: phoneBatchScanning,
+    overlayImages: [
+      {
+        src: paper,
+        position: 'paper1',
+        delay: 600,
+      },
+      {
+        src: paper,
+        position: 'paper2',
+        delay: 800,
+      },
+      {
+        src: paper,
+        position: 'paper3',
+        delay: 1000,
+      },
+    ],
   },
   {
     id: 'advanced-filters',

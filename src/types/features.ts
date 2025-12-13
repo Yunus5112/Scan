@@ -10,7 +10,7 @@ export interface Feature {
   phoneImage: string;
   overlayImages?: {
     src: string;
-    position: 'signature' | 'stamp';
+    position: 'signature' | 'stamp' | 'paper1' | 'paper2' | 'paper3';
     delay: number; // Animation delay in ms
   }[];
 }

@@ -61,6 +61,48 @@
   transform-origin: center center;
 }
 
+/* Paper positions for batch scanning - stacked effect inside phone */
+.paper1 {
+  z-index: 1;
+  top: 40%;
+  left: 50%;
+  width: 180px;
+  height: auto;
+  transform-origin: center center;
+  animation: slideInPaper 0.5s ease-out forwards;
+}
+
+.paper2 {
+  z-index: 2;
+  top: 42%;
+  left: 50%;
+  width: 200px;
+  height: auto;
+  transform-origin: center center;
+  animation: slideInPaper 0.5s ease-out forwards;
+}
+
+.paper3 {
+  z-index: 3;
+  top: 44%;
+  left: 50%;
+  width: 220px;
+  height: auto;
+  transform-origin: center center;
+  animation: slideInPaper 0.5s ease-out forwards;
+}
+
+@keyframes slideInPaper {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
 /* Responsive */
 @media (max-width: 1023px) {
   .phoneImage {
@@ -75,6 +117,30 @@
   .stamp {
     right: -10%;
     width: 140px;
+  }
+
+  .paper1 {
+    width: 130px;
+  }
+
+  .paper2 {
+    width: 145px;
+  }
+
+  .paper3 {
+    width: 160px;
+  }
+
+  .paper1 {
+    top: 34%;
+  }
+
+  .paper2 {
+    top: 37%;
+  }
+
+  .paper3 {
+    top: 40%;
   }
 }
 
@@ -93,6 +159,21 @@
     top: 20%;
     right: 0;
     width: 100px;
+  }
+
+  .paper1 {
+    width: 100px;
+    top: 36%;
+  }
+
+  .paper2 {
+    width: 115px;
+    top: 39%;
+  }
+
+  .paper3 {
+    width: 130px;
+    top: 42%;
   }
 }
 
