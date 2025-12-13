@@ -10,9 +10,12 @@ import type { Feature } from '../types/features';
 import phoneDocumentScanner from '../assets/images/PhoneDocumentScanner.png';
 import phoneSignAndStamp from '../assets/images/PhoneSignAndStamp.png';
 import phoneBatchScanning from '../assets/images/PhoneBatchScanning.png';
+import phoneAdvanceFilter from '../assets/images/PhoneAdvanceFilter.png';
 import signatureOverlay from '../assets/images/Signature.png';
 import completedStamp from '../assets/images/Completed.png';
 import paper from '../assets/images/Paper.png';
+import advanceFilterLeftBar from '../assets/images/AdvanceFilterLeftBar.png';
+import advanceFilterRightBar from '../assets/images/AdvanceFilterRightBar.png';
 
 export const FEATURES: Feature[] = [
   {
@@ -78,11 +81,23 @@ export const FEATURES: Feature[] = [
     id: 'advanced-filters',
     label: 'Advanced Filters',
     icon: AdvancedFiltersIcon,
-    title: 'Advanced Filters',
+    title: 'Unique Filters',
     subtitle: 'ADVANCED FILTERS',
     description:
-      'Enhance your scanned documents with powerful filters. Adjust brightness, contrast, and apply automatic corrections.',
-    phoneImage: phoneDocumentScanner,
+      'Apply advanced filters and enhance quality with various custom made filters. Manually edit brightness and contrast by your own choice on the custom filters.',
+    phoneImage: phoneAdvanceFilter,
+    overlayImages: [
+      {
+        src: advanceFilterLeftBar,
+        position: 'leftBar',
+        delay: 600,
+      },
+      {
+        src: advanceFilterRightBar,
+        position: 'rightBar',
+        delay: 800,
+      },
+    ],
   },
   {
     id: 'export-share',
