@@ -38,8 +38,8 @@
   color: #0b122a;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #0b122a;
-  border-radius: var(--radius-sm);
+  border: 0.5px solid #00000029;
+  border-radius: 0;
   transition:
     background-color var(--transition-normal),
     color var(--transition-normal);
