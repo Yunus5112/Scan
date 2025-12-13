@@ -1,0 +1,108 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+
+.phoneImage {
+  width: auto;
+  max-width: 320px;
+  height: auto;
+  max-height: 85%;
+  object-fit: contain;
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  animation: fadeInScale 0.5s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Signature position - bottom left of phone */
+.signature {
+  bottom: 25%;
+  left: -10%;
+  width: 180px;
+  height: auto;
+  transform-origin: center center;
+}
+
+/* Stamp position - right side of phone */
+.stamp {
+  top: 25%;
+  right: -15%;
+  width: 200px;
+  height: auto;
+  transform-origin: center center;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .phoneImage {
+    max-width: 240px;
+  }
+
+  .signature {
+    left: -5%;
+    width: 120px;
+  }
+
+  .stamp {
+    right: -10%;
+    width: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .phoneImage {
+    max-width: 180px;
+  }
+
+  .signature {
+    bottom: 20%;
+    left: 0;
+    width: 80px;
+  }
+
+  .stamp {
+    top: 20%;
+    right: 0;
+    width: 100px;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .phoneImage,
+  .overlay {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+

@@ -8,6 +8,11 @@ export interface Feature {
   subtitle: string;
   description: string;
   phoneImage: string;
+  overlayImages?: {
+    src: string;
+    position: 'signature' | 'stamp';
+    delay: number; // Animation delay in ms
+  }[];
 }
 
 export type FeatureId =

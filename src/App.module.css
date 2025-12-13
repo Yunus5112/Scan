@@ -17,33 +17,14 @@
 }
 
 .phoneContainer {
+  position: relative;
   display: flex;
   flex-shrink: 0;
   align-items: flex-end;
   justify-content: center;
   height: 100%;
   padding-bottom: 0;
-  overflow: hidden;
-}
-
-.phoneImage {
-  width: auto;
-  max-width: 320px;
-  height: auto;
-  max-height: 85%;
-  object-fit: contain;
-  animation: slideUp 0.6s ease-out;
-}
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  overflow: visible;
 }
 
 .contentContainer {
@@ -67,11 +48,6 @@
     max-height: 50%;
   }
 
-  .phoneImage {
-    max-width: 240px;
-    max-height: 100%;
-  }
-
   .contentContainer {
     align-items: center;
     justify-content: center;
@@ -83,16 +59,5 @@
   .main {
     gap: var(--spacing-4);
     padding: var(--spacing-4) var(--spacing-3);
-  }
-
-  .phoneImage {
-    max-width: 180px;
-  }
-}
-
-/* Reduce motion for users who prefer it */
-@media (prefers-reduced-motion: reduce) {
-  .phoneImage {
-    animation: none;
   }
 }

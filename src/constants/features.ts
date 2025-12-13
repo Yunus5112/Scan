@@ -8,6 +8,9 @@ import {
 import type { Feature } from '../types/features';
 
 import phoneDocumentScanner from '../assets/images/PhoneDocumentScanner.png';
+import phoneSignAndStamp from '../assets/images/PhoneSignAndStamp.png';
+import signatureOverlay from '../assets/images/Signature.png';
+import completedStamp from '../assets/images/Completed.png';
 
 export const FEATURES: Feature[] = [
   {
@@ -24,11 +27,23 @@ export const FEATURES: Feature[] = [
     id: 'sign-stamp',
     label: 'Sign & Stamp',
     icon: SignStampIcon,
-    title: 'Sign & Stamp',
+    title: 'One-Tap Focus',
     subtitle: 'SIGN & STAMP',
     description:
-      'Add your signature or stamp to any document quickly and securely. Perfect for contracts and official documents.',
-    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
+      'Draw, scan or import your signature and stamp with a simple touch. Sign and stamp any document with just a single tap!',
+    phoneImage: phoneSignAndStamp,
+    overlayImages: [
+      {
+        src: signatureOverlay,
+        position: 'signature',
+        delay: 600,
+      },
+      {
+        src: completedStamp,
+        position: 'stamp',
+        delay: 900,
+      },
+    ],
   },
   {
     id: 'batch-scanning',
@@ -38,7 +53,7 @@ export const FEATURES: Feature[] = [
     subtitle: 'BATCH SCANNING',
     description:
       'Scan multiple pages at once and combine them into a single document. Save time with our efficient batch processing.',
-    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
+    phoneImage: phoneDocumentScanner,
   },
   {
     id: 'advanced-filters',
@@ -48,7 +63,7 @@ export const FEATURES: Feature[] = [
     subtitle: 'ADVANCED FILTERS',
     description:
       'Enhance your scanned documents with powerful filters. Adjust brightness, contrast, and apply automatic corrections.',
-    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
+    phoneImage: phoneDocumentScanner,
   },
   {
     id: 'export-share',
@@ -58,6 +73,6 @@ export const FEATURES: Feature[] = [
     subtitle: 'EXPORT & SHARE',
     description:
       'Export your documents in multiple formats and share them instantly via email, cloud storage, or messaging apps.',
-    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
+    phoneImage: phoneDocumentScanner,
   },
 ];
