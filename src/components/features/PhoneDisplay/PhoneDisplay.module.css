@@ -45,18 +45,18 @@
 
 /* Signature position - bottom left of phone */
 .signature {
-  bottom: 25%;
-  left: -10%;
-  width: 180px;
+  bottom: 15%;
+  left: -20%;
+  width: 140px;
   height: auto;
   transform-origin: center center;
 }
 
 /* Stamp position - right side of phone */
 .stamp {
-  top: 25%;
+  top: 45%;
   right: -15%;
-  width: 200px;
+  width: 160px;
   height: auto;
   transform-origin: center center;
 }
