@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { FeatureContent } from './components/features/FeatureContent';
 import { FeatureTabs } from './components/features/FeatureTabs';
 import { FEATURES } from './constants/features';
 import styles from './App.module.css';
@@ -11,12 +12,19 @@ export function App() {
     setActiveFeatureId(featureId);
   };
 
+  const activeFeature = FEATURES.find((f) => f.id === activeFeatureId) || FEATURES[0];
+
   return (
     <div className={styles.app}>
       <main className={styles.main}>
-        {/* Feature content will be added here */}
-        <div className={styles.contentPlaceholder}>
-          <h2>Active Feature: {activeFeatureId}</h2>
+        <div className={styles.phoneContainer}>
+          {/* Phone mockup will be added here */}
+          <div className={styles.phonePlaceholder}>
+            <span>Phone Mockup</span>
+          </div>
+        </div>
+        <div className={styles.contentContainer}>
+          <FeatureContent feature={activeFeature} />
         </div>
       </main>
 
