@@ -20,33 +20,33 @@ export function FeatureTabs({
           const isActive = feature.id === activeFeatureId;
 
           return (
-            <button
-              key={feature.id}
-              role="tab"
-              aria-selected={isActive}
-              aria-controls={`panel-${feature.id}`}
-              id={`tab-${feature.id}`}
-              className={`${styles.tab} ${isActive ? styles.tabActive : ''}`}
-              onClick={() => onFeatureChange(feature.id)}
-              type="button"
-            >
-              <span
-                className={styles.tabIcon}
-                key={isActive ? `${feature.id}-active` : feature.id}
+            <div key={feature.id} className={styles.tabItem}>
+              <button
+                role="tab"
+                aria-selected={isActive}
+                aria-controls={`panel-${feature.id}`}
+                id={`tab-${feature.id}`}
+                className={`${styles.tab} ${isActive ? styles.tabActive : ''}`}
+                onClick={() => onFeatureChange(feature.id)}
+                type="button"
               >
-                <IconComponent aria-hidden="true" />
-              </span>
-              <span
-                className={styles.tabLabel}
-                key={isActive ? `${feature.id}-label-active` : `${feature.id}-label`}
-              >
-                {feature.label}
-              </span>
-            </button>
+                <span
+                  className={styles.tabIcon}
+                  key={isActive ? `${feature.id}-active` : feature.id}
+                >
+                  <IconComponent aria-hidden="true" />
+                </span>
+                <span
+                  className={styles.tabLabel}
+                  key={isActive ? `${feature.id}-label-active` : `${feature.id}-label`}
+                >
+                  {feature.label}
+                </span>
+              </button>
+            </div>
           );
         })}
       </div>
     </div>
   );
 }
-
