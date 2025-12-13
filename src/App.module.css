@@ -1,3 +1,24 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main {
-  display: block;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-8);
+  background-color: var(--color-background);
+}
+
+.contentPlaceholder {
+  text-align: center;
+}
+
+.contentPlaceholder h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
 }
