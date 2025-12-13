@@ -116,13 +116,27 @@
 .tabIcon svg circle {
   stroke: currentColor;
   stroke-opacity: 0.08;
+  stroke-dasharray: 173;
+  stroke-dashoffset: 0;
+  transform: rotate(-90deg);
+  transform-origin: center;
   transition: stroke-opacity var(--transition-normal);
 }
 
-/* Active tab - icon circle becomes blue */
+/* Active tab - icon circle becomes blue with loading animation */
 .tabActive .tabIcon svg circle {
   stroke: var(--color-primary);
   stroke-opacity: 1;
+  animation: circleLoad 0.6s ease-out forwards;
+}
+
+@keyframes circleLoad {
+  0% {
+    stroke-dashoffset: -173;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* Document Scanner arc - normal state is light, active is full */
