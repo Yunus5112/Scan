@@ -105,44 +105,31 @@
 
 /* Filter bars for advanced filters */
 .leftBar {
-  top: 35%;
+  top: 40%;
   left: -8%;
   width: auto;
-  height: 65%;
-  max-height: 450px;
+  height: 55%;
+  max-height: 350px;
   transform-origin: center center;
-  animation: slideInLeft 0.5s ease-out forwards;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 .rightBar {
-  top: 35%;
+  top: 40%;
   right: -8%;
   width: auto;
-  height: 65%;
-  max-height: 450px;
+  height: 55%;
+  max-height: 350px;
   transform-origin: center center;
-  animation: slideInRight 0.5s ease-out forwards;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
-@keyframes slideInLeft {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 
