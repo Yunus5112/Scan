@@ -16,6 +16,11 @@ import completedStamp from '../assets/images/Completed.png';
 import paper from '../assets/images/Paper.png';
 import advanceFilterLeftBar from '../assets/images/AdvanceFilterLeftBar.png';
 import advanceFilterRightBar from '../assets/images/AdvanceFilterRightBar.png';
+import phoneExportShare from '../assets/images/PhoneExportShare.png';
+import arrowIcon from '../assets/images/Arrow.png';
+import pdfFile from '../assets/images/PdfFile.png';
+import jpgFile from '../assets/images/JpgFile.png';
+import txtFile from '../assets/images/TxtFile.png';
 
 export const FEATURES: Feature[] = [
   {
@@ -103,10 +108,31 @@ export const FEATURES: Feature[] = [
     id: 'export-share',
     label: 'Export & Share',
     icon: ExportShareIcon,
-    title: 'Export & Share',
+    title: 'All-Round Conversion',
     subtitle: 'EXPORT & SHARE',
-    description:
-      'Export your documents in multiple formats and share them instantly via email, cloud storage, or messaging apps.',
-    phoneImage: phoneDocumentScanner,
+    description: 'Export your scans as PDF,JPG,ZIP,TXT and Word.',
+    phoneImage: phoneExportShare,
+    overlayImages: [
+      {
+        src: arrowIcon,
+        position: 'arrow',
+        delay: 600,
+      },
+      {
+        src: pdfFile,
+        position: 'pdfFile',
+        delay: 800,
+      },
+      {
+        src: jpgFile,
+        position: 'jpgFile',
+        delay: 1000,
+      },
+      {
+        src: txtFile,
+        position: 'txtFile',
+        delay: 1200,
+      },
+    ],
   },
 ];

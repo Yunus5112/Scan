@@ -146,6 +146,84 @@
   }
 }
 
+/* Export & Share overlays */
+.arrow {
+  bottom: 5%;
+  left: -10%;
+  width: 20px;
+  height: auto;
+  transform-origin: center center;
+  animation: slideUpThenLeft 0.8s ease-out forwards;
+}
+
+.pdfFile {
+  bottom: 5%;
+  left: -10%;
+  width: 100px;
+  height: auto;
+  transform-origin: center center;
+  animation: slideUpThenLeft 0.8s ease-out forwards;
+}
+
+.jpgFile {
+  bottom: 10%;
+  left: 50%;
+  width: 90px;
+  height: auto;
+  transform-origin: center center;
+  animation: slideUpToCenter 0.8s ease-out forwards;
+}
+
+.txtFile {
+  bottom: 5%;
+  right: -10%;
+  width: 100px;
+  height: auto;
+  transform-origin: center center;
+  animation: slideUpThenRight 0.8s ease-out forwards;
+}
+
+@keyframes slideUpThenLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) translateX(50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes slideUpToCenter {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+@keyframes slideUpThenRight {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) translateX(-50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
 /* Responsive */
 @media (max-width: 1023px) {
   .phoneImage {
@@ -195,6 +273,25 @@
     right: -5%;
     height: 60%;
   }
+
+  .arrow {
+    left: -10%;
+    width: 45px;
+  }
+
+  .pdfFile {
+    left: -18%;
+    width: 80px;
+  }
+
+  .jpgFile {
+    width: 70px;
+  }
+
+  .txtFile {
+    right: -18%;
+    width: 80px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -237,6 +334,25 @@
   .rightBar {
     right: -2%;
     height: 50%;
+  }
+
+  .arrow {
+    left: -5%;
+    width: 35px;
+  }
+
+  .pdfFile {
+    left: -12%;
+    width: 60px;
+  }
+
+  .jpgFile {
+    width: 55px;
+  }
+
+  .txtFile {
+    right: -12%;
+    width: 60px;
   }
 }
 
