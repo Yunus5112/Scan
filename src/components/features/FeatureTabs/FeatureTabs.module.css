@@ -109,6 +109,30 @@
   height: 40px;
 }
 
+/* Icon circle stroke - normal state (light gray) */
+.tabIcon svg circle {
+  stroke: currentColor;
+  stroke-opacity: 0.08;
+  transition: stroke-opacity var(--transition-normal);
+}
+
+/* Active tab - icon circle becomes blue */
+.tabActive .tabIcon svg circle {
+  stroke: var(--color-primary);
+  stroke-opacity: 1;
+}
+
+/* Document Scanner arc - normal state is light, active is full */
+.tabIcon svg path.accent-arc {
+  stroke-opacity: 0.15;
+  transition: stroke-opacity var(--transition-normal);
+}
+
+.tabActive .tabIcon svg path.accent-arc {
+  stroke: var(--color-primary);
+  stroke-opacity: 1;
+}
+
 .tabLabel {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
