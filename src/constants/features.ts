@@ -7,6 +7,8 @@ import {
 } from '../assets/icons';
 import type { Feature } from '../types/features';
 
+import phoneDocumentScanner from '../assets/images/PhoneDocumentScanner.png';
+
 export const FEATURES: Feature[] = [
   {
     id: 'document-scanner',
@@ -16,6 +18,7 @@ export const FEATURES: Feature[] = [
     subtitle: 'DOCUMENT SCANNER',
     description:
       'Scan any document instantly with your mobile device by just a few steps. Save as PDF,JPG,ZIP,TXT and Word format.',
+    phoneImage: phoneDocumentScanner,
   },
   {
     id: 'sign-stamp',
@@ -25,6 +28,7 @@ export const FEATURES: Feature[] = [
     subtitle: 'SIGN & STAMP',
     description:
       'Add your signature or stamp to any document quickly and securely. Perfect for contracts and official documents.',
+    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
   },
   {
     id: 'batch-scanning',
@@ -34,6 +38,7 @@ export const FEATURES: Feature[] = [
     subtitle: 'BATCH SCANNING',
     description:
       'Scan multiple pages at once and combine them into a single document. Save time with our efficient batch processing.',
+    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
   },
   {
     id: 'advanced-filters',
@@ -43,6 +48,7 @@ export const FEATURES: Feature[] = [
     subtitle: 'ADVANCED FILTERS',
     description:
       'Enhance your scanned documents with powerful filters. Adjust brightness, contrast, and apply automatic corrections.',
+    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
   },
   {
     id: 'export-share',
@@ -52,6 +58,6 @@ export const FEATURES: Feature[] = [
     subtitle: 'EXPORT & SHARE',
     description:
       'Export your documents in multiple formats and share them instantly via email, cloud storage, or messaging apps.',
+    phoneImage: phoneDocumentScanner, // Placeholder - replace with actual image
   },
 ];
-

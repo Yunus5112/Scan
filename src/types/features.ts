@@ -7,6 +7,7 @@ export interface Feature {
   title: string;
   subtitle: string;
   description: string;
+  phoneImage: string;
 }
 
 export type FeatureId =

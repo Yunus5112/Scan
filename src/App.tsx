@@ -18,10 +18,12 @@ export function App() {
     <div className={styles.app}>
       <main className={styles.main}>
         <div className={styles.phoneContainer}>
-          {/* Phone mockup will be added here */}
-          <div className={styles.phonePlaceholder}>
-            <span>Phone Mockup</span>
-          </div>
+          <img
+            key={activeFeature.id}
+            src={activeFeature.phoneImage}
+            alt={activeFeature.title}
+            className={styles.phoneImage}
+          />
         </div>
         <div className={styles.contentContainer}>
           <FeatureContent feature={activeFeature} />
