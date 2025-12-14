@@ -8,7 +8,7 @@
 
 .phoneImage {
   width: auto;
-  max-width: 320px;
+  max-width: var(--phone-max-width);
   height: auto;
   max-height: 85%;
   object-fit: contain;
@@ -214,7 +214,7 @@
 /* Responsive */
 @media (max-width: 1023px) {
   .phoneImage {
-    max-width: 240px;
+    max-width: var(--phone-max-width-tablet);
   }
 
   .signature {
@@ -283,7 +283,7 @@
 
 @media (max-width: 767px) {
   .phoneImage {
-    max-width: 280px;
+    max-width: var(--phone-max-width-mobile);
     max-height: 100%;
   }
 

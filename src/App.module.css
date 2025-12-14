@@ -8,7 +8,7 @@
 .main {
   display: flex;
   flex: 1;
-  gap: 240px;
+  gap: var(--layout-main-gap);
   align-items: center;
   justify-content: center;
   padding: var(--spacing-8) var(--spacing-8) 0 var(--spacing-8);
@@ -24,7 +24,7 @@
   justify-content: center;
   height: 100%;
   padding-bottom: 0;
-  margin-left: -200px;
+  margin-left: var(--layout-phone-offset);
   overflow: visible;
 }
 
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: -200px;
+  margin-right: var(--layout-content-offset);
   text-align: right;
 }
 

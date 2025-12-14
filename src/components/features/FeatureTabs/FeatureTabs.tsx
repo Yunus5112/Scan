@@ -1,10 +1,10 @@
-import type { Feature } from '../../../types/features';
+import type { Feature, FeatureId } from '../../../types/features';
 import styles from './FeatureTabs.module.css';
 
 interface FeatureTabsProps {
   features: Feature[];
-  activeFeatureId: string;
-  onFeatureChange: (featureId: string) => void;
+  activeFeatureId: FeatureId;
+  onFeatureChange: (featureId: FeatureId) => void;
 }
 
 export function FeatureTabs({

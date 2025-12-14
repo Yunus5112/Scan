@@ -4,12 +4,13 @@ import { FeatureContent } from './components/features/FeatureContent';
 import { FeatureTabs } from './components/features/FeatureTabs';
 import { PhoneDisplay } from './components/features/PhoneDisplay';
 import { FEATURES } from './constants/features';
+import type { FeatureId } from './types/features';
 import styles from './App.module.css';
 
 export function App() {
-  const [activeFeatureId, setActiveFeatureId] = useState(FEATURES[0].id);
+  const [activeFeatureId, setActiveFeatureId] = useState<FeatureId>(FEATURES[0].id);
 
-  const handleFeatureChange = (featureId: string) => {
+  const handleFeatureChange = (featureId: FeatureId) => {
     setActiveFeatureId(featureId);
   };
 

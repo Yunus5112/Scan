@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  max-width: 400px;
+  max-width: var(--layout-content-max-width);
   text-align: right;
 }
 
@@ -11,7 +11,7 @@
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.1em;
-  color: #0381ff;
+  color: var(--color-primary);
   text-transform: uppercase;
 }
 
@@ -20,7 +20,7 @@
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  color: #0b122a;
+  color: var(--color-text-dark);
 }
 
 .description {
@@ -28,17 +28,17 @@
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-relaxed);
-  color: #0b172a;
+  color: var(--color-text-body);
 }
 
 .learnMoreButton {
   padding: var(--spacing-3) var(--spacing-6);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
-  color: #0b122a;
+  color: var(--color-text-dark);
   cursor: pointer;
   background: transparent;
-  border: 0.5px solid #00000029;
+  border: 0.5px solid var(--color-border-light);
   border-radius: 0;
   transition:
     background-color var(--transition-normal),
@@ -46,12 +46,12 @@
 }
 
 .learnMoreButton:hover {
-  color: #fff;
-  background-color: #0b122a;
+  color: var(--color-background-white);
+  background-color: var(--color-text-dark);
 }
 
 .learnMoreButton:focus-visible {
-  outline: 2px solid #0381ff;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
