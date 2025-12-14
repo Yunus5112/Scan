@@ -30,18 +30,10 @@ export function FeatureTabs({
                 onClick={() => onFeatureChange(feature.id)}
                 type="button"
               >
-                <span
-                  className={styles.tabIcon}
-                  key={isActive ? `${feature.id}-active` : feature.id}
-                >
+                <span className={styles.tabIcon}>
                   <IconComponent aria-hidden="true" />
                 </span>
-                <span
-                  className={styles.tabLabel}
-                  key={isActive ? `${feature.id}-label-active` : `${feature.id}-label`}
-                >
-                  {feature.label}
-                </span>
+                <span className={styles.tabLabel}>{feature.label}</span>
               </button>
             </div>
           );

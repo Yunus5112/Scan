@@ -14,9 +14,9 @@ export function PhoneDisplay({ feature }: PhoneDisplayProps) {
         alt={feature.title}
         className={styles.phoneImage}
       />
-      {feature.overlayImages?.map((overlay, index) => (
+      {feature.overlayImages?.map((overlay) => (
         <img
-          key={`${feature.id}-overlay-${index}`}
+          key={`${feature.id}-${overlay.position}`}
           src={overlay.src}
           alt=""
           className={`${styles.overlay} ${styles[overlay.position]}`}

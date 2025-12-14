@@ -1,13 +1,11 @@
 :root {
   /* Colors - Primary */
   --color-primary: #0381ff;
-  --color-primary-light: rgba(3, 129, 255, 0.1);
   --color-primary-alpha-8: rgba(3, 129, 255, 0.03);
 
   /* Colors - Text */
   --color-text-primary: #0d0d0d;
   --color-text-secondary: #4d4d4d;
-  --color-text-muted: #6b7280;
   --color-text-dark: #0b122a;
   --color-text-body: #0b172a;
 
@@ -16,8 +14,6 @@
   --color-background-white: #fff;
 
   /* Colors - Border */
-  --color-border: #e5e7eb;
-  --color-border-active: #0381ff;
   --color-border-light: rgba(0, 0, 0, 0.16);
   --color-border-divider: rgba(0, 0, 0, 0.08);
 
@@ -48,26 +44,8 @@
   --spacing-2: 0.5rem; /* 8px */
   --spacing-3: 0.75rem; /* 12px */
   --spacing-4: 1rem; /* 16px */
-  --spacing-5: 1.25rem; /* 20px */
   --spacing-6: 1.5rem; /* 24px */
   --spacing-8: 2rem; /* 32px */
-  --spacing-10: 2.5rem; /* 40px */
-  --spacing-12: 3rem; /* 48px */
-  --spacing-16: 4rem; /* 64px */
-  --spacing-20: 5rem; /* 80px */
-
-  /* Border Radius */
-  --radius-sm: 0.25rem; /* 4px */
-  --radius-md: 0.5rem; /* 8px */
-  --radius-lg: 0.75rem; /* 12px */
-  --radius-xl: 1rem; /* 16px */
-  --radius-full: 9999px;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 5%);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 10%),
-    0 4px 6px -4px rgb(0 0 0 / 10%);
 
   /* Transitions */
   --transition-fast: 150ms ease;
