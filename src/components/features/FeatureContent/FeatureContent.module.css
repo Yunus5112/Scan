@@ -8,9 +8,10 @@
 
 .subtitle {
   margin-bottom: var(--spacing-3);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  letter-spacing: 0.1em;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-heavy);
+  line-height: var(--line-height-subtitle);
+  letter-spacing: 2px;
   color: var(--color-primary);
   text-transform: uppercase;
 }
@@ -25,9 +26,10 @@
 
 .description {
   margin-bottom: var(--spacing-6);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-relaxed);
+  line-height: var(--line-height-description);
+  letter-spacing: 0.8px;
   color: var(--color-text-body);
 }
 

@@ -6,6 +6,7 @@
   /* Colors - Text */
   --color-text-primary: #0d0d0d;
   --color-text-secondary: #4d4d4d;
+  --color-text-black: #000000;
   --color-text-dark: #0b122a;
   --color-text-body: #0b172a;
 
@@ -34,10 +35,14 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-heavy: 800;
 
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.75;
+  --line-height-tab: 1.4; /* 28px / 20px */
+  --line-height-subtitle: 1.0; /* 16px / 16px */
+  --line-height-description: 1.6; /* 32px / 20px */
 
   /* Spacing */
   --spacing-1: 0.25rem; /* 4px */
@@ -66,7 +71,7 @@
   --layout-main-gap: 240px;
   --layout-phone-offset: -200px;
   --layout-content-offset: -200px;
-  --layout-content-max-width: 400px;
+  --layout-content-max-width: 556px;
 
   /* Layout - Phone Display */
   --phone-max-width: 320px;

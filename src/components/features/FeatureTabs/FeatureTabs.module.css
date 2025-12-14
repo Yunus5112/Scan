@@ -41,9 +41,9 @@
   align-items: center;
   justify-content: center;
   padding: 0 var(--spacing-8);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
+  color: var(--color-text-black);
   cursor: pointer;
   background: transparent;
   white-space: nowrap;
@@ -151,9 +151,9 @@
 }
 
 .tabLabel {
-  font-size: var(--font-size-sm);
+  font-size: inherit;
   font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-tight);
+  line-height: var(--line-height-tab);
   transition: transform var(--transition-fast);
 }
 
